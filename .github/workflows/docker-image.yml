@@ -18,7 +18,7 @@ jobs:
       run: docker build -t nginx-test .
     - name: "test run"
       run: docker run -d -p 888:88 nginx-test
-    - name "test run Docker "
+    - name: "test run Docker "
       run: docker ps -a 
     - name: "test curl "
       run: curl localhost:888/index.html
